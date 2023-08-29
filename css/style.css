@@ -178,7 +178,7 @@ section {
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link {
-    color: #9dc15b;
+    color: #006400;
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link::after {
@@ -196,7 +196,7 @@ section {
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
-    color: #9dc15b;
+    color: #006400;
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover::after {
@@ -238,7 +238,7 @@ section {
 }
 
 .top-navbar .navbar-light .navbar-nav li .dropdown-menu a:hover {
-    background: #9dc15b;
+    background: #006400;
     color: #ffffff;
 }
 
@@ -259,7 +259,7 @@ section {
 
 .navbar-right li a.hover-btn-new::before,
 .navbar-right li a.hover-btn-new::after {
-    background: #9dc15b;
+    background: #006400;
     content: '';
     position: absolute;
     z-index: 1;
@@ -317,7 +317,7 @@ section {
 }
 
 .navbar-toggler:hover {
-    background: #9dc15b;
+    background: #006400;
 }
 
 .navbar-toggler:hover .icon-bar {
@@ -331,7 +331,7 @@ section {
 
 
 .box-slider .carousel-control-prev {
-    background: #9dc15b;
+    background: #006400;
     position: absolute;
     left: 0px;
     font-size: 38px;
@@ -343,7 +343,7 @@ section {
 }
 
 .box-slider .carousel-control-next {
-    background: #9dc15b;
+    background: #006400;
     position: absolute;
     right: 0px;
     font-size: 38px;
@@ -382,7 +382,7 @@ section {
 }
 
 .big-tagline a.hover-btn-new:hover span {
-    color: #9dc15b;
+    color: #006400;
 }
 
 .hover-btn-new::before {
@@ -393,7 +393,7 @@ section {
 }
 
 .hover-btn-new::after {
-    background: #9dc15b !important;
+    background: #006400 !important;
     height: 100%;
     left: 0;
     top: 0;
