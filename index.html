@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     </head>
 
@@ -25,7 +26,7 @@
 
         <header class="header">
             <a href="#" class="logo">
-                <img src="./images/gfg_logo.png" alt="" height="80px">
+                <img src="" alt="" height="80px">
             </a>
         
             <nav class="navbar">
@@ -36,6 +37,8 @@
                 <a href="#learn"> &lt;/&gt;POTW</a>
                 <a href="#about">Team</a>
             </nav>
+
+            <div class="fas fa-bars" id="menu-btn"></div>
         
         </header>
 
@@ -43,10 +46,89 @@
     </div>
 
 
+    <section class="section swiper-container swiper-slider swiper-slider-1 context-dark" data-loop="true"
+        data-autoplay="5000" data-simulate-touch="false">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" data-slide-bg="images/index-1-slider-1-1920x768.jpg">
+                <div class="swiper-slide-caption section-lg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
+                                <h1><span class="d-block" data-caption-animate="fadeInUp"
+                                        data-caption-delay="100">Professional Accounting</span><span
+                                        class="d-block text-light" data-caption-animate="fadeInUp"
+                                        data-caption-delay="200">& Tax Services</span></h1>
+                                <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="350">Providing every
+                                    client with the attention they deserve.</p>
+                                <div class="button-wrap-default" data-caption-animate="fadeInUp" data-caption-delay="450"><a
+                                        class="button button-secondary-text" href="#">Read more</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="images/index-1-slider-2-1920x768.jpg">
+                <div class="swiper-slide-caption section-lg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
+                                <h1><span class="d-block" data-caption-animate="fadeInUp" data-caption-delay="100">Full
+                                        Accounting Support</span><span class="d-block text-light"
+                                        data-caption-animate="fadeInUp" data-caption-delay="200">for Your Business</span>
+                                </h1>
+                                <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="350">Get rid of any
+                                    accounting issues with our team’s assistance.</p>
+                                <div class="button-wrap-default" data-caption-animate="fadeInUp" data-caption-delay="450"><a
+                                        class="button button-secondary-text" href="#">Read more</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg="images/index-1-slider-3-1920x768.jpg">
+                <div class="swiper-slide-caption section-lg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
+                                <h1><span class="d-block" data-caption-animate="fadeInUp" data-caption-delay="100">#1 Tax
+                                        Services Provider</span><span class="d-block text-light"
+                                        data-caption-animate="fadeInUp" data-caption-delay="200">Since the Late 1990s</span>
+                                </h1>
+                                <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="350">We offer specialist
+                                    tax knowledge and full 24/7 support.</p>
+                                <div class="button-wrap-default" data-caption-animate="fadeInUp" data-caption-delay="450"><a
+                                        class="button button-secondary-text" href="#">Read more</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Swiper Pagination-->
+        <div class="swiper-pagination-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="js/core.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
