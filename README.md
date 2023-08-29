@@ -1,1 +1,1 @@
-# GFGSC-LIET
+# gfgscliet-website

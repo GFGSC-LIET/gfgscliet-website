@@ -1,10 +1,22 @@
+const checkBox = document.querySelector(".theme");
 const loader = document.querySelector('.pre-loader');
 const body = document.querySelector('.body');
+
+checkBox.addEventListener('change', function () { 
+	if (checkBox.checked == true){
+		body.classList.add("dark");
+	  } else {
+		 body.classList.remove("dark");
+	}
+});
+
 
 body.style.display = 'none';
 window.addEventListener('load', function () {
 	loader.style.display = 'none';
 	body.style.display = 'block';
+
+
 });
 
 // swiper
@@ -157,3 +169,7 @@ window.addEventListener('load', function () {
 		}
 	});
 }());
+
+
+
+
