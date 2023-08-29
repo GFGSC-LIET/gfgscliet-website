@@ -1,6 +1,10 @@
-window.addEventListener('load', function() {
-  const loader = document.querySelector('.pre-loader');
-  loader.style.display = 'none';
+const loader = document.querySelector('.pre-loader');
+const body = document.querySelector('.body');
+
+body.style.display = 'none';
+window.addEventListener('load', function () {
+	loader.style.display = 'none';
+	body.style.display = 'block';
 });
 
 // swiper
