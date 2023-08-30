@@ -1,13 +1,16 @@
 const checkBox = document.querySelector(".theme");
 const loader = document.querySelector('.pre-loader');
 const body = document.querySelector('.body');
-const dr = document.querySelector('.dr');
+const dr = document.querySelectorAll('.dr');
 
 checkBox.addEventListener('change', function () { 
-	if (checkBox.checked == true){
-		dr.classList.add("dark");
-	  } else {
-		 dr.classList.remove("dark");
+	for (var i = 0; i < dr.length; i++) {
+		if (checkBox.checked == true){
+			dr[i].classList.add("dark");
+		  } else {
+			 dr[i].classList.remove("dark");
+		}
+
 	}
 });
 
