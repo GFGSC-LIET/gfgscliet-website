@@ -1,12 +1,13 @@
 const checkBox = document.querySelector(".theme");
 const loader = document.querySelector('.pre-loader');
 const body = document.querySelector('.body');
+const dr = document.querySelector('.dr');
 
 checkBox.addEventListener('change', function () { 
 	if (checkBox.checked == true){
-		body.classList.add("dark");
+		dr.classList.add("dark");
 	  } else {
-		 body.classList.remove("dark");
+		 dr.classList.remove("dark");
 	}
 });
 
@@ -18,6 +19,9 @@ window.addEventListener('load', function () {
 
 
 });
+
+
+
 
 // swiper
 
