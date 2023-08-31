@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    </head>
+</head>
 
 <body class="dr">
 
     <div class="pre-loader">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48" class="loader">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
+            class="loader">
             <path fill="#43a04700"
                 d="M29.035,24C29.014,23.671,29,23.339,29,23c0-6.08,2.86-10,7-10c3.411,0,6.33,2.662,7,7l2,0l0.001-9	L43,11c0,0-0.533,1.506-1,1.16c-1.899-1.066-3.723-1.132-6.024-1.132C30.176,11.028,25,16.26,25,22.92	c0,0.364,0.021,0.723,0.049,1.08h-2.099C22.979,23.643,23,23.284,23,22.92c0-6.66-5.176-11.892-10.976-11.892	c-2.301,0-4.125,0.065-6.024,1.132C5.533,12.506,5,11,5,11l-2.001,0L3,20l2,0c0.67-4.338,3.589-7,7-7c4.14,0,7,3.92,7,10	c0,0.339-0.014,0.671-0.035,1H0v2h1.009c1.083,0,1.977,0.861,1.999,1.943C3.046,29.789,3.224,32.006,4,33c1.269,1.625,3,3,8,3	c5.022,0,9.92-4.527,11-10h2c1.08,5.473,5.978,10,11,10c5,0,6.731-1.375,8-3c0.776-0.994,0.954-3.211,0.992-5.057	C45.014,26.861,45.909,26,46.991,26H48v-2H29.035z M11.477,33.73C9.872,33.73,7.322,33.724,7,32	c-0.109-0.583-0.091-2.527-0.057-4.046C6.968,26.867,7.855,26,8.943,26H19C18.206,30.781,15.015,33.73,11.477,33.73z M41,32	c-0.322,1.724-2.872,1.73-4.477,1.73c-3.537,0-6.729-2.949-7.523-7.73h10.057c1.088,0,1.975,0.867,2,1.954	C41.091,29.473,41.109,31.417,41,32z">
             </path>
@@ -23,246 +25,280 @@
     </div>
 
 
-    <div class="body">
-    
-        <header class="top-navbar" style="position: fixed; width: 100%; z-index: 1;" >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo-hosting.png" alt="" />
+    <div class="dr body">
+
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"></h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
-                    aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbars-host">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="features.html">Features </a></li>
-                        <li class="nav-item"><a class="nav-link" href="domain.html">Domain</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li><label class="theme-switch">
-                            <input type="checkbox" class="theme-switch__checkbox theme">
-                            <div class="theme-switch__container">
-                                <div class="theme-switch__clouds"></div>
-                                <div class="theme-switch__stars-container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </div>
-                                <div class="theme-switch__circle-container">
-                                    <div class="theme-switch__sun-moon-container">
-                                        <div class="theme-switch__moon">
-                                            <div class="theme-switch__spot"></div>
-                                            <div class="theme-switch__spot"></div>
-                                            <div class="theme-switch__spot"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </label></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
-    <section style="z-index: 0;" class="section swiper-container swiper-slider swiper-slider-1 context-dark" data-loop="true"
-        data-autoplay="5000" data-simulate-touch="false">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" data-slide-bg="images/index-1-slider-1-1920x768.jpg">
-                <div class="swiper-slide-caption section-lg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
-                                <h1><span class="d-block" data-caption-animate="fadeInUp"
-                                        data-caption-delay="100">Professional Accounting</span><span
-                                        class="d-block text-light" data-caption-animate="fadeInUp"
-                                        data-caption-delay="200">& Tax Services</span></h1>
-                                <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="350">Providing every
-                                    client with the attention they deserve.</p>
-                                <div class="button-wrap-default" data-caption-animate="fadeInUp" data-caption-delay="450"><a
-                                        class="button button-secondary-text" href="#">Read more</a></div>
-                            </div>
-                        </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#feature" class="nav-item nav-link">Feature</a>
+                        <a href="#pricing" class="nav-item nav-link">Pricing</a>
+                        <a href="#review" class="nav-item nav-link">Review</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
+                    <label class="switch">
+                        <input class="checkbox" type="checkbox">
+                        <span class="slider"></span>
+                    </label>
                 </div>
-            </div>
-            <div class="swiper-slide" data-slide-bg="images/index-1-slider-2-1920x768.jpg">
-                <div class="swiper-slide-caption section-lg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
-                                <h1><span class="d-block" data-caption-animate="fadeInUp" data-caption-delay="100">Full
-                                        Accounting Support</span><span class="d-block text-light"
-                                        data-caption-animate="fadeInUp" data-caption-delay="200">for Your Business</span>
-                                </h1>
-                                <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="350">Get rid of any
-                                    accounting issues with our team’s assistance.</p>
-                                <div class="button-wrap-default" data-caption-animate="fadeInUp" data-caption-delay="450"><a
-                                        class="button button-secondary-text" href="#">Read more</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" data-slide-bg="images/index-1-slider-3-1920x768.jpg">
-                <div class="swiper-slide-caption section-lg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
-                                <h1><span class="d-block" data-caption-animate="fadeInUp" data-caption-delay="100">#1 Tax
-                                        Services Provider</span><span class="d-block text-light"
-                                        data-caption-animate="fadeInUp" data-caption-delay="200">Since the Late 1990s</span>
-                                </h1>
-                                <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="350">We offer specialist
-                                    tax knowledge and full 24/7 support.</p>
-                                <div class="button-wrap-default" data-caption-animate="fadeInUp" data-caption-delay="450"><a
-                                        class="button button-secondary-text" href="#">Read more</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </nav>
         </div>
-        <!--Swiper Pagination-->
-        <div class="swiper-pagination-wrap">
-            <div class="container">
+
+
+        <section style="z-index: 0;" class="section swiper-container swiper-slider swiper-slider-1 context-dark"
+            data-loop="true" data-autoplay="5000" data-simulate-touch="false">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-slide-bg="images/index-1-slider-1-1920x768.jpg">
+                    <div class="swiper-slide-caption section-lg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
+                                    <h1><span class="d-block" data-caption-animate="fadeInUp"
+                                            data-caption-delay="100">Professional Accounting</span><span
+                                            class="d-block text-light" data-caption-animate="fadeInUp"
+                                            data-caption-delay="200">& Tax Services</span></h1>
+                                    <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="350">Providing
+                                        every
+                                        client with the attention they deserve.</p>
+                                    <div class="button-wrap-default" data-caption-animate="fadeInUp"
+                                        data-caption-delay="450"><a class="button button-secondary-text" href="#">Read
+                                            more</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-slide-bg="images/index-1-slider-2-1920x768.jpg">
+                    <div class="swiper-slide-caption section-lg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
+                                    <h1><span class="d-block" data-caption-animate="fadeInUp"
+                                            data-caption-delay="100">Full
+                                            Accounting Support</span><span class="d-block text-light"
+                                            data-caption-animate="fadeInUp" data-caption-delay="200">for Your
+                                            Business</span>
+                                    </h1>
+                                    <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="350">Get rid of
+                                        any
+                                        accounting issues with our team’s assistance.</p>
+                                    <div class="button-wrap-default" data-caption-animate="fadeInUp"
+                                        data-caption-delay="450"><a class="button button-secondary-text" href="#">Read
+                                            more</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-slide-bg="images/index-1-slider-3-1920x768.jpg">
+                    <div class="swiper-slide-caption section-lg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
+                                    <h1><span class="d-block" data-caption-animate="fadeInUp"
+                                            data-caption-delay="100">#1
+                                            Tax
+                                            Services Provider</span><span class="d-block text-light"
+                                            data-caption-animate="fadeInUp" data-caption-delay="200">Since the Late
+                                            1990s</span>
+                                    </h1>
+                                    <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="350">We offer
+                                        specialist
+                                        tax knowledge and full 24/7 support.</p>
+                                    <div class="button-wrap-default" data-caption-animate="fadeInUp"
+                                        data-caption-delay="450"><a class="button button-secondary-text" href="#">Read
+                                            more</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Swiper Pagination-->
+            <div class="swiper-pagination-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_section layout_padding ">
+            <div class="container  ">
                 <div class="row">
-                    <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about_section layout_padding ">
-        <div class="container  ">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="detail-box">
-                        <div class="heading_container">
-                            <h2>
-                                Why choose GFG SC LIET
-                            </h2>
+                    <div class="col-md-6">
+                        <div class="detail-box">
+                            <div class="heading_container">
+                                <h2>
+                                    Why choose GFG SC LIET
+                                </h2>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta laboriosam enim qui
+                                aliquam
+                                sequi sunt, facilis ipsum voluptatibus voluptatem, est provident, veniam doloribus ex
+                                sit
+                                nesciunt hic tenetur autem quidem!
+                            </p>
                         </div>
-                        <p>
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta laboriosam enim qui aliquam sequi sunt, facilis ipsum voluptatibus voluptatem, est provident, veniam doloribus ex sit nesciunt hic tenetur autem quidem!
-                        </p>
                     </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="img-box">
-                        <img src="images/gfg_logo.png" alt="">
-                    </div>
-                </div>
-    
-            </div>
-        </div>
-    </section>
-    <section class="about_section layout_padding why">
-        <div class="container  ">
-            <div class="row">
-                <div class="col-md-6 ">
-                    <div class="img-box">
-                        <img src="images/gfg_logo.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="detail-box">
-                        <div class="heading_container">
-                            <h2>
-                                What are we bring out for you
-                            </h2>
+                    <div class="col-md-6 ">
+                        <div class="img-box">
+                            <img src="images/gfg_logo.png" alt="">
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit dolorem, labore perspiciatis rerum facilis cumque eveniet repellendus, atque, quo modi eligendi culpa! Corrupti accusamus eos debitis perspiciatis natus distinctio.
-                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="about_section layout_padding why">
+            <div class="container  ">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="img-box">
+                            <img src="images/gfg_logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="detail-box">
+                            <div class="heading_container">
+                                <h2>
+                                    What are we bring out for you
+                                </h2>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit dolorem,
+                                labore
+                                perspiciatis rerum facilis cumque eveniet repellendus, atque, quo modi eligendi culpa!
+                                Corrupti accusamus eos debitis perspiciatis natus distinctio.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!--faq-->
+        <section>
+            <h1>FAQ'S</h1>
+        
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What is Web Development?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Web Development broadly refers to the tasks associated with developing functional websites and
+                            applications for the Internet. The web development process includes web design, web content
+                            development,
+                            client-side/server-side scripting and network security configuration, among other tasks.
+                        </div>
                     </div>
                 </div>
-                
-    
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What is HTML?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            HTML, aka HyperText Markup Language, is the dominant markup language for creating websites and
+                            anything
+                            that can be viewed in a web browser.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What are some basic technical skills of a Front-End developer?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            <ul style="padding-left: 1rem;">
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>Frameworks (CSS and JavaScript frameworks)</li>
+                                <li>Responsive Design</li>
+                                <li>Version Control/Git</li>
+                                <li>Testing/Debugging</li>
+                                <li>Browser Developer Tools</li>
+                                <li>Web Performance</li>
+                                <li>SEO (Search Engine Optimization)</li>
+                                <!-- <li>CSS Preprocessing</li> -->
+                                <li>Command Line</li>
+                                <li>CMS (Content Management System)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What is HTTP?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            HTTP, aka HyperText Transfer Protocol, is the underlying protocol used by the World Wide Web and
+                            this
+                            protocol defines how messages are formatted and transmitted, and what actions Web servers and
+                            browsers
+                            should take in response to various commands.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What is CORS?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images,
+                            stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain
+                            from
+                            which the resource originated.
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+
+        
+
+
+<!-- contact form -->
+        <div style="text-align: center;">
+            <iframe scrolling="no"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeQYTBtQV4Y-UefPqy5AQXvDNLeSsEnHjC6Lu8VaRK7_d8uBQ/viewform?embedded=true"
+                width="640" height="700" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+
         </div>
-    </section>
+<section style="text-align: center; background-color: rgb(0,0,0) !important;">
+    fotter
+</section>
 
-    <div style="text-align: center;">
-        <iframe scrolling="no"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeQYTBtQV4Y-UefPqy5AQXvDNLeSsEnHjC6Lu8VaRK7_d8uBQ/viewform?embedded=true"
-        width="640" height="700" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-
+        
     </div>
 
 
-    <!--faq-->
-
-    <div class="container">
-        <h2>Frequently Asked Questions</h2>
-        <div class="accordion">
-            <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon
-                        sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-                        suspendisse potenti.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky
-                        blue?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-                        suspendisse potenti.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover
-                        aliens?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-                        suspendisse potenti.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth
-                        weigh?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-                        suspendisse potenti.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay
-                        up?</span><span class="icon" aria-hidden="true"></span></button>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-                        suspendisse potenti.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    </div>
-
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script src="js/core.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/core.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
