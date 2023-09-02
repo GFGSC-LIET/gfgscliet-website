@@ -2,7 +2,16 @@ const checkBox = document.querySelector('.checkbox');
 const dr = document.querySelectorAll('.dr');
 
 
+checkBox.addEventListener('change', function () { 
+  for (var i = 0; i < dr.length; i++) {
+    if (checkBox.checked == true){
+      dr[i].classList.add("dark");
+      } else {
+       dr[i].classList.remove("dark");
+    }
 
+  }
+});
 
 
 
