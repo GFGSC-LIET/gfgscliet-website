@@ -521,9 +521,9 @@ section {
 /********** Template CSS **********/
 :root {
     --primary: #006400;
-    --secondary: #8F12FD;
+    --secondary: #fff;
     --light: #F0F6FF;
-    --dark: #262B47;
+    --dark: #fff;
 }
 
 /*** Navbar ***/
@@ -534,7 +534,6 @@ section {
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    color: var(--light) !important;
     outline: none;
     transition: .5s;
 }
@@ -554,17 +553,15 @@ section {
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--dark) !important;
+    color: var(--dark) ;
 }
 
 .navbar-light .navbar-nav .nav-link:hover::before,
 .navbar-light .navbar-nav .nav-link.active::before {
     top: 0;
+    color: #000 !important;
 }
 
-.navbar-light .navbar-brand h1 {
-    color: #FFFFFF;
-}
 
 .navbar-light .navbar-brand img {
     max-height: 60px;
@@ -590,12 +587,13 @@ section {
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        color: var(--dark) !important;
     }
 
     .navbar-light .navbar-nav .nav-link::before {
         display: none;
     }
+
+   
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
@@ -624,7 +622,7 @@ section {
 
     .sticky-top.navbar-light {
         position: fixed;
-        background: #F0FFF0;
+        background: #1f1f1f;
     }
 
     .sticky-top.navbar-light .navbar-nav .nav-link::before {
@@ -636,6 +634,10 @@ section {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+}
+
+#nav{
+    box-shadow: 0 0 100px -29px rgba(255, 255, 255, 0.621) !important;
 }
 
 
@@ -872,7 +874,3 @@ input:checked+.slider:before {
     }
 }
 
-
-.hide{
-    display:none;
-}
