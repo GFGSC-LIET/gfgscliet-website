@@ -437,7 +437,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root {
-    --green: #006400;
+    --green: #2f8d46;
     --white: #fff;
     --light-color: #666666;
     --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .7);
@@ -471,7 +471,7 @@ body {
 
 .dark {
     background: #1f1f1f !important;
-    color: #006400;
+    color: #2f8d46;
 }
 
 
@@ -520,7 +520,7 @@ section {
 
 /********** Template CSS **********/
 :root {
-    --primary: #006400;
+    --primary: #27b74a;
     --secondary: #fff;
     --light: #F0F6FF;
     --dark: #fff;
@@ -656,7 +656,7 @@ section {
 }
 
 .loader path {
-    stroke: #006400;
+    stroke: #2f8d46;
     stroke-width: 0.6px;
     animation: dashArray 7s ease-in-out infinite,
         dashOffset 7s linear infinite;
@@ -707,7 +707,7 @@ section {
 
 /* The slider */
 .slider {
-    --background: #006400;
+    --background: #2f8d46;
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -733,7 +733,7 @@ section {
 }
 
 input:checked+.slider {
-    background-color: #006400;
+    background-color: #2f8d46;
 }
 
 input:checked+.slider:before {
@@ -810,8 +810,12 @@ input:checked+.slider:before {
 }
 
 .why {
-    background-color: #006400;
+    background-color: #2f8d46;
     color: #000;
+}
+
+.choose.span{
+    color: #2f8d46
 }
 
 
