@@ -1,26 +1,8 @@
 const checkBox = document.querySelector('.checkbox');
-const loader = document.querySelector('.pre-loader');
-const body = document.querySelector('.page');
 const dr = document.querySelectorAll('.dr');
 
-body.style.display = 'none';
-window.addEventListener('load', function () {
-	loader.style.display = 'none';
-	body.style.display = 'block';
 
 
-});
-
-checkBox.addEventListener('change', function () { 
-  for (var i = 0; i < dr.length; i++) {
-    if (checkBox.checked == true){
-      dr[i].classList.add("dark");
-      } else {
-       dr[i].classList.remove("dark");
-    }
-
-  }
-});
 
 
 
@@ -44,6 +26,7 @@ checkBox.addEventListener('change', function () {
 		livedemo = true,
 
 		plugins = {
+				preloader: $(".preloader"),
 			swiper:                  $( '.swiper-container' )
 		};
 
@@ -294,3 +277,33 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
     }
   });
 });
+
+// Initialize scripts that require a loaded page
+	$window.on('load', function () {
+		// Page loader & Page transition
+		if (plugins.preloader.length && !isNoviBuilder) {
+			pageTransition({
+				target: document.querySelector('.page'),
+				delay: 0,
+				duration: pageTransitionAnimationDuration,
+				classActive: 'animated',
+				conditions: function (event, link) {
+					return !/(\#|callto:|tel:|mailto:|:\/\/)/.test(link)
+							&& !event.currentTarget.hasAttribute('data-lightgallery')
+							&& event.currentTarget.getAttribute('href') !== 'javascript:void(0);';
+				},
+				onTransitionStart: function (options) {
+					setTimeout(function () {
+						plugins.preloader.removeClass('loaded');
+					}, options.duration * .75);
+				},
+				onReady: function () {
+					plugins.preloader.addClass('loaded');
+					windowReady = true;
+				}
+			});
+		}
+	});
+
+
+

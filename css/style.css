@@ -641,7 +641,7 @@ section {
 
 /* pre-loader */
 
-.pre-loader {
+.preloader {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -870,4 +870,9 @@ input:checked+.slider:before {
     html {
         font-size: 14px;
     }
+}
+
+
+.hide{
+    display:none;
 }
