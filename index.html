@@ -1,18 +1,21 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
 
 <head>
+    <title>Home</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="dr">
 
-    <div class="pre-loader">
+
+
+    <div class="pre-loader" >
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
             class="loader">
             <path fill="#43a04700"
@@ -22,8 +25,7 @@
     </div>
 
 
-    <div class="dr body">
-
+    <div class="dr page">
         <div class="container-xxl position-relative p-0" id="home">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-top shadow-sm">
                 <a href="" class="navbar-brand p-0">
@@ -50,41 +52,82 @@
             </nav>
         </div>
 
-<!--swiper-->
 
+        <!--Swiper-->
+        <section class="section p-0 swiper-container swiper-slider swiper-slider-1 context-dark" data-loop="true"
+            data-autoplay="5000" data-simulate-touch="false">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-slide-bg="./images/hi.jpg">
+                    <div class="swiper-slide-caption section-lg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
+                                    <h1><span class="d-block" data-caption-animate="fadeInUp"
+                                            data-caption-delay="100">Professional Accounting</span><span
+                                            class="d-block text-light" data-caption-animate="fadeInUp"
+                                            data-caption-delay="200">& Tax Services</span></h1>
+                                    <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="350">Providing
+                                        every client with the attention they deserve.</p>
+                                    <div class="button-wrap-default" data-caption-animate="fadeInUp"
+                                        data-caption-delay="450"><a class="button button-secondary-text" href="#">Read
+                                            more</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-slide-bg="./images/hi.jpg">
+                    <div class="swiper-slide-caption section-lg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
+                                    <h1><span class="d-block" data-caption-animate="fadeInUp"
+                                            data-caption-delay="100">Full Accounting Support</span><span
+                                            class="d-block text-light" data-caption-animate="fadeInUp"
+                                            data-caption-delay="200">for Your Business</span></h1>
+                                    <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="350">Get rid of
+                                        any accounting issues with our team’s assistance.</p>
+                                    <div class="button-wrap-default" data-caption-animate="fadeInUp"
+                                        data-caption-delay="450"><a class="button button-secondary-text" href="#">Read
+                                            more</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-slide-bg="./images/hi.jpg">
+                    <div class="swiper-slide-caption section-lg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
+                                    <h1><span class="d-block" data-caption-animate="fadeInUp"
+                                            data-caption-delay="100">#1 Tax Services Provider</span><span
+                                            class="d-block text-light" data-caption-animate="fadeInUp"
+                                            data-caption-delay="200">Since the Late 1990s</span></h1>
+                                    <p class="lead" data-caption-animate="fadeInUp" data-caption-delay="350">We offer
+                                        specialist tax knowledge and full 24/7 support.</p>
+                                    <div class="button-wrap-default" data-caption-animate="fadeInUp"
+                                        data-caption-delay="450"><a class="button button-secondary-text" href="#">Read
+                                            more</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Swiper Pagination-->
+            <div class="swiper-pagination-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-
-
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./images/hi.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="./images/hi.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="./images/hi.jpg" class="d-block w-100" alt="...">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-
-
-
-
+        <!--about-->
 
         <section class="about_section layout_padding ">
             <div class="container  ">
@@ -247,13 +290,12 @@
         </section>
 
 
+
+
     </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--coded by Starlight-->
 </body>
 
 </html>
