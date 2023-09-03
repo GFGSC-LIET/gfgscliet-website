@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="dr">
-    <div class="preloader" >
+    <div class="preloader">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
             class="loader">
             <path fill="#43a04700"
@@ -31,7 +34,7 @@
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
+                    <span class="fa fa-bars" style="color: #fff; font-size: 25px;"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
@@ -45,51 +48,57 @@
                         <input class="checkbox" type="checkbox">
                         <span class="slider"></span>
                     </label>
+                    
                 </div>
             </nav>
         </div>
 
 
         <!--Swiper-->
-        <section class="section p-0 swiper-container swiper-slider swiper-slider-1 context-dark" data-loop="true"
-            data-autoplay="5000" data-simulate-touch="false">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" data-slide-bg="./images/hi.jpg">
-                    
+
+        <div  id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/hi.jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="swiper-slide" data-slide-bg="./images/hi.jpg">
-                    
+                <div class="carousel-item">
+                    <img src="./images/hi.jpg" class="d-block w-100" alt="...">
                 </div>
-                <div class="swiper-slide" data-slide-bg="./images/hi.jpg">
-                    
-                </div>
-            </div>
-            <!--Swiper Pagination-->
-            <div class="swiper-pagination-wrap">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-9 col-lg-7 offset-md-1 offset-xxl-0">
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                    <img src="./images/hi.jpg" class="d-block w-100"  alt="...">
                 </div>
             </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
 
         <!--about-->
 
-        <section class="about_section layout_padding p-0">
+        <section class="about_section layout_padding p-3">
             <div class="container  ">
                 <div class="heading_container pt-5">
-                    <h2 style="text-align: center;">Why choose GFGSC-LIET?</h2>
+                    <h2 class="drw pb-5" style="text-align: center; position: relative; top: 35px; font-size: 50px !important;">Why choose GFGSC-LIET?
+                    </h2>
                 </div>
                 <div class="row">
 
                     <div class="col-md-6">
                         <div class="detail-box">
-                            
-                            <p style="font-size:x-large;">
-                                Join our <span>GFGSC-LIET</span>, where we're committed to improving your educational experience through targeted domains. We strive to meet every student's technological needs by adopting a unifying philosophy known as "One Chapter for All Student Needs." As we encourage a community that learns, develops, and thrives together, embrace our motto of "#1forAll."
+                            <p  class="drp fs">
+                                Join our <span class="drw fs" >GFGSC-LIET</span>, where we're committed to improving your educational experience
+                                through targeted domains. We strive to meet every student's technological needs by
+                                adopting a unifying philosophy known as "One Chapter for All Student Needs." As we
+                                encourage a community that learns, develops, and thrives together, embrace our
+                                motto of <span class="drw fs" >#1forAll</span>.
                             </p>
                         </div>
                     </div>
@@ -102,10 +111,10 @@
                 </div>
             </div>
         </section>
-        <section class="about_section layout_padding why p-0">
+        <section class="about_section layout_padding why p-3">
             <div class="container  ">
                 <div class="heading_container pt-5">
-                    <h2 style="text-align: center; color: black; font-weight:bolder;">
+                    <h2 style="font-size: 50px; text-align: center; color: #fff; position: relative; top: 35px;">
                         What are we bringing out for you?
                     </h2>
                 </div>
@@ -118,9 +127,12 @@
                     </div>
                     <div class="col-md-6">
                         <div class="detail-box">
-                            
-                            <p style="font-size:x-large;color:aliceblue">GFGSC LIET is a tech club that fosters a passion for technology through domain-enriched learning. We empower members with practical skills in coding and web development while cultivating a mindset of innovation. Join us in shaping future tech leaders who drive progress and make a positive impact.
-                                
+
+                            <p class="fs" style="font-size:x-large;color:#000">GFGSC LIET is a tech club that fosters a passion for
+                                technology through domain-enriched learning. We empower members with practical skills in
+                                coding and web development while cultivating a mindset of innovation. Join us in shaping
+                                future tech leaders who drive progress and make a positive impact.
+
                             </p>
                         </div>
                     </div>
@@ -134,94 +146,102 @@
         <section>
             <div class="container  ">
                 <div class="heading_container pt-5">
-                    <h2 style="text-align: center; color: black; font-weight:bolder;">
-                       FAQ's
+                    <h2 style="text-align: center; font-size: 50px;" class="drw">
+                        FAQ's
                     </h2>
                 </div>
                 <div class="row">
 
-            <div class="accordion">
-                <div class="accordion-item">
-                    <div class="accordion-item-header">
-                        What is Web Development?
-                    </div>
-                    <div class="accordion-item-body">
-                        <div class="accordion-item-body-content">
-                            Web Development broadly refers to the tasks associated with developing functional websites
-                            and
-                            applications for the Internet. The web development process includes web design, web content
-                            development,
-                            client-side/server-side scripting and network security configuration, among other tasks.
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                What is Web Development?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    Web Development broadly refers to the tasks associated with developing functional
+                                    websites
+                                    and
+                                    applications for the Internet. The web development process includes web design, web
+                                    content
+                                    development,
+                                    client-side/server-side scripting and network security configuration, among other
+                                    tasks.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                What is HTML?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    HTML, aka HyperText Markup Language, is the dominant markup language for creating
+                                    websites
+                                    and
+                                    anything
+                                    that can be viewed in a web browser.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                What are some basic technical skills of a Front-End developer?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <ul style="padding-left: 1rem;">
+                                        <li>HTML, CSS, JavaScript</li>
+                                        <li>Frameworks (CSS and JavaScript frameworks)</li>
+                                        <li>Responsive Design</li>
+                                        <li>Version Control/Git</li>
+                                        <li>Testing/Debugging</li>
+                                        <li>Browser Developer Tools</li>
+                                        <li>Web Performance</li>
+                                        <li>SEO (Search Engine Optimization)</li>
+                                        <!-- <li>CSS Preprocessing</li> -->
+                                        <li>Command Line</li>
+                                        <li>CMS (Content Management System)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                What is HTTP?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    HTTP, aka HyperText Transfer Protocol, is the underlying protocol used by the World
+                                    Wide Web
+                                    and
+                                    this
+                                    protocol defines how messages are formatted and transmitted, and what actions Web
+                                    servers
+                                    and
+                                    browsers
+                                    should take in response to various commands.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                What is CORS?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources
+                                    (e.g.
+                                    images,
+                                    stylesheets, scripts, fonts) on a web page to be requested from another domain
+                                    outside the
+                                    domain
+                                    from
+                                    which the resource originated.
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-item-header">
-                        What is HTML?
-                    </div>
-                    <div class="accordion-item-body">
-                        <div class="accordion-item-body-content">
-                            HTML, aka HyperText Markup Language, is the dominant markup language for creating websites
-                            and
-                            anything
-                            that can be viewed in a web browser.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-item-header">
-                        What are some basic technical skills of a Front-End developer?
-                    </div>
-                    <div class="accordion-item-body">
-                        <div class="accordion-item-body-content">
-                            <ul style="padding-left: 1rem;">
-                                <li>HTML, CSS, JavaScript</li>
-                                <li>Frameworks (CSS and JavaScript frameworks)</li>
-                                <li>Responsive Design</li>
-                                <li>Version Control/Git</li>
-                                <li>Testing/Debugging</li>
-                                <li>Browser Developer Tools</li>
-                                <li>Web Performance</li>
-                                <li>SEO (Search Engine Optimization)</li>
-                                <!-- <li>CSS Preprocessing</li> -->
-                                <li>Command Line</li>
-                                <li>CMS (Content Management System)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-item-header">
-                        What is HTTP?
-                    </div>
-                    <div class="accordion-item-body">
-                        <div class="accordion-item-body-content">
-                            HTTP, aka HyperText Transfer Protocol, is the underlying protocol used by the World Wide Web
-                            and
-                            this
-                            protocol defines how messages are formatted and transmitted, and what actions Web servers
-                            and
-                            browsers
-                            should take in response to various commands.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-item-header">
-                        What is CORS?
-                    </div>
-                    <div class="accordion-item-body">
-                        <div class="accordion-item-body-content">
-                            CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g.
-                            images,
-                            stylesheets, scripts, fonts) on a web page to be requested from another domain outside the
-                            domain
-                            from
-                            which the resource originated.
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
 
@@ -232,50 +252,46 @@
         <div style="text-align: center;">
             <iframe scrolling="no"
                 src="https://docs.google.com/forms/d/e/1FAIpQLSeQYTBtQV4Y-UefPqy5AQXvDNLeSsEnHjC6Lu8VaRK7_d8uBQ/viewform?embedded=true"
-                width="640" height="700" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0"></iframe>
 
         </div>
-        
-  <footer
-  class="text-center text-lg-start text-dark"
-  style="background-color: #fff"
-  >
 
-<section
-     class="d-flex justify-content-between p-4 text-white"
-     style="background-color: #1f1f1f"
-     >
-<div class="me-5">
-<span>Made with ❤️ By GFGSC-LIET</span>
-</div>
-<div>
-<a href="" class="text-white me-4">
-  <i class="fab fa-facebook-f"></i>
-</a>
-<a href="" class="text-white me-4">
-  <i class="fab fa-twitter"></i>
-</a>
-<a href="" class="text-white me-4">
-  <i class="fab fa-google"></i>
-</a>
-<a href="" class="text-white me-4">
-  <i class="fab fa-instagram"></i>
-</a>
-<a href="" class="text-white me-4">
-  <i class="fab fa-linkedin"></i>
-</a>
-<a href="" class="text-white me-4">
-  <i class="fab fa-github"></i>
-</a>
-</div>
-</section>
-</footer>
+        <footer class="text-center text-lg-start text-dark" style="background-color: #fff">
+
+            <section class="d-flex justify-content-between p-4 text-white" style="background-color: #1f1f1f">
+                <div class="me-5">
+                    <span>Made with ❤️ By GFGSC-LIET</span>
+                </div>
+                <div>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+        </footer>
 
 
 
 
     </div>
-    <script src="js/core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
