@@ -1,20 +1,24 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
 
 <head>
+    <title>Home</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Events</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="./css/events.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/events.css">
+
 </head>
 
-<body>
-
-    <div class="pre-loader">
+<body class="dr">
+    <div class="preloader">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
             class="loader">
             <path fill="#43a04700"
@@ -23,191 +27,545 @@
         </svg>
     </div>
 
-    <div class="page dr">
-        <div style="position: fixed; width: 100%; z-index: 1;">
-            <header class="top-navbar">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="images/logo-hosting.png" alt="" />
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
-                            aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbars-host">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="features.html">Features </a></li>
-                                <li class="nav-item"><a class="nav-link" href="domain.html">Domain</a></li>
-                                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                                <li><label class="theme-switch">
-                                        <input type="checkbox" class="theme-switch__checkbox theme">
-                                        <div class="theme-switch__container">
-                                            <div class="theme-switch__clouds"></div>
-                                            <div class="theme-switch__stars-container">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55"
-                                                    fill="none">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z"
-                                                        fill="currentColor"></path>
-                                                </svg>
-                                            </div>
-                                            <div class="theme-switch__circle-container">
-                                                <div class="theme-switch__sun-moon-container">
-                                                    <div class="theme-switch__moon">
-                                                        <div class="theme-switch__spot"></div>
-                                                        <div class="theme-switch__spot"></div>
-                                                        <div class="theme-switch__spot"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </label></li>
-                            </ul>
-                        </div>
+
+    <div class="dr page">
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav id="nav" class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-top shadow-sm">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"></h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars" style="color: #fff; font-size: 25px;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#about" class="nav-item nav-link active">Home</a>
+                        <a href="#feature" class="nav-item nav-link">Team</a>
+                        <a href="#pricing" class="nav-item nav-link">Events</a>
+                        <a href="#review" class="nav-item nav-link">Gallery</a>
+                        <a href="#contact" class="nav-item nav-link">POTW</a>
                     </div>
-                </nav>
-            </header>
-
-        </div>
-
-
-        <div class="event_cal">
-            <p>Event Calender Coming Soon !!!</p>
-        </div>
-
-        <div class="upcoming_events dr">
-            <h2 class="dr">UPCOMING EVENTS</h2><br>
-            <p class="dr">There are no Upcoming Events , Come back soon !</p>
-        </div>
-
-
-        <div class="past_events dr">
-            <h4 class="dr">PAST EVENTS</h4>
-            <div class="d-flex justify-content-around row">
-
-                <div class="card ">
-                    <div class="first-content">
-                        <img src="./images/sol for ind.jpg" class="imgs" alt="">
-                    </div>
-                    <div class="second-content">
-                        <div>
-
-                            <h5>Solving for India Hackathon</h5>
-                            <p>🚀 Back to the technological extravaganza! Back in May 2023, GFG organized the Solving
-                                for India Hackathon in collaboration with AMD and Google. Four spirited GFGSC-LIET teams
-                                made the trip to Bengaluru to present their creative concepts at the South Regionals. As
-                                we relish those moments of brilliance, let's continue inspiring and empowering the
-                                future of technology. 💡🌟
-                            </p><br>
-                        </div>
-                    </div>
-
+                    <label class="switch">
+                        <input class="checkbox" type="checkbox">
+                        <span class="slider"></span>
+                    </label>
 
                 </div>
-                <div class="card ">
-                    <div class="first-content">
-                        <img src="./images/web dev bootcamp.jpg" class="imgs" alt="">
-                    </div>
-                    <div class="second-content">
-                        <div>
-
-                            <h5>Web Development Bootcamp</h5><br>
-                            <p>🚀 Go back in time to the enlightening Web Dev Bootcamp of GFGSC-LIET! We dove into HTML,
-                                CSS, and JavaScript from December 19 to December 24, 2022. Relive the events that
-                                started our coding career as we continue to build our web development talents.👩‍💻👨‍💻
-                            </p><br>
+            </nav>
+        </div>
+        <!-- Portfolio section start -->
+        <div class="section secondary-section " id="portfolio">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class=" title">
+                    <h1>Have You Seen our Works?</h1>
+                    <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.
+                    </p>
+                </div>
+                <ul class="nav nav-pills">
+                    <li class="filter" data-filter="all">
+                        <a href="#noAction">All</a>
+                    </li>
+                    <li class="filter" data-filter="web">
+                        <a href="#noAction">Web</a>
+                    </li>
+                    <li class="filter" data-filter="photo">
+                        <a href="#noAction">Photo</a>
+                    </li>
+                    <li class="filter" data-filter="identity">
+                        <a href="#noAction">Identity</a>
+                    </li>
+                </ul>
+                <!-- Start details for portfolio project 1 -->
+                <div id="single-project">
+                    <div id="slidingDiv" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio01.png" alt="project 1" />
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name
+                                    </div>
+                                    <div>
+                                        <span>Date</span>July 2013
+                                    </div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript
+                                    </div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com
+                                    </div>
+                                </div>
+                                <p>Believe in yourself! Have faith in your abilities! Without a humble but reasonable
+                                    confidence in your own powers you cannot be successful or happy.</p>
+                            </div>
                         </div>
                     </div>
-
-
-                </div>
-                <div class="card ">
-                    <div class="first-content">
-                        <img src="./images/geek start jr.jpg" class="imgs" alt="">
-                    </div>
-                    <div class="second-content">
-                        <div>
-
-                            <h5>Geek Start Jr</h5><br>
-                            <p>🚀 Relive the GEEK Start Jr Hackathon's excitement! Our 2nd-year coding enthusiasts took
-                                the stage on September 23–24 of 2022, leaving their mark. As we nurture brilliance,
-                                anticipate more exhilarating tech experiences. 🔥👩‍💻👨‍💻</p><br>
+                    <!-- End details for portfolio project 1 -->
+                    <!-- Start details for portfolio project 2 -->
+                    <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio02.png" alt="project 2">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name
+                                    </div>
+                                    <div>
+                                        <span>Date</span>July 2013
+                                    </div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript
+                                    </div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com
+                                    </div>
+                                </div>
+                                <p>Life is a song - sing it. Life is a game - play it. Life is a challenge - meet it.
+                                    Life is a dream - realize it. Life is a sacrifice - offer it. Life is love - enjoy
+                                    it.</p>
+                            </div>
                         </div>
                     </div>
-
-
+                    <!-- End details for portfolio project 2 -->
+                    <!-- Start details for portfolio project 3 -->
+                    <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio03.png" alt="project 3">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name
+                                    </div>
+                                    <div>
+                                        <span>Date</span>July 2013
+                                    </div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript
+                                    </div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com
+                                    </div>
+                                </div>
+                                <p>How far you go in life depends on your being tender with the young, compassionate
+                                    with the aged, sympathetic with the striving and tolerant of the weak and strong.
+                                    Because someday in your life you will have been all of these.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 3 -->
+                    <!-- Start details for portfolio project 4 -->
+                    <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio04.png" alt="project 4">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Project for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name
+                                    </div>
+                                    <div>
+                                        <span>Date</span>July 2013
+                                    </div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript
+                                    </div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com
+                                    </div>
+                                </div>
+                                <p>Life's but a walking shadow, a poor player, that struts and frets his hour upon the
+                                    stage, and then is heard no more; it is a tale told by an idiot, full of sound and
+                                    fury, signifying nothing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 4 -->
+                    <!-- Start details for portfolio project 5 -->
+                    <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio05.png" alt="project 5">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name
+                                    </div>
+                                    <div>
+                                        <span>Date</span>July 2013
+                                    </div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript
+                                    </div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com
+                                    </div>
+                                </div>
+                                <p>We need to give each other the space to grow, to be ourselves, to exercise our
+                                    diversity. We need to give each other space so that we may both give and receive
+                                    such beautiful things as ideas, openness, dignity, joy, healing, and inclusion.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 5 -->
+                    <!-- Start details for portfolio project 6 -->
+                    <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio06.png" alt="project 6">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name
+                                    </div>
+                                    <div>
+                                        <span>Date</span>July 2013
+                                    </div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript
+                                    </div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com
+                                    </div>
+                                </div>
+                                <p>I went to the woods because I wished to live deliberately, to front only the
+                                    essential facts of life, and see if I could not learn what it had to teach, and not,
+                                    when I came to die, discover that I had not lived.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 6 -->
+                    <!-- Start details for portfolio project 7 -->
+                    <div id="slidingDiv6" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio07.png" alt="project 7">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name
+                                    </div>
+                                    <div>
+                                        <span>Date</span>July 2013
+                                    </div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript
+                                    </div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com
+                                    </div>
+                                </div>
+                                <p>Always continue the climb. It is possible for you to do whatever you choose, if you
+                                    first get to know who you are and are willing to work with a power that is greater
+                                    than ourselves to do it.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 7 -->
+                    <!-- Start details for portfolio project 8 -->
+                    <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio08.png" alt="project 8">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name
+                                    </div>
+                                    <div>
+                                        <span>Date</span>July 2013
+                                    </div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript
+                                    </div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com
+                                    </div>
+                                </div>
+                                <p>What if you gave someone a gift, and they neglected to thank you for it - would you
+                                    be likely to give them another? Life is the same way. In order to attract more of
+                                    the blessings that life has to offer, you must truly appreciate what you already
+                                    have.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 8 -->
+                    <!-- Start details for portfolio project 9 -->
+                    <div id="slidingDiv8" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio09.png" alt="project 9">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name
+                                    </div>
+                                    <div>
+                                        <span>Date</span>July 2013
+                                    </div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript
+                                    </div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com
+                                    </div>
+                                </div>
+                                <p>I learned that we can do anything, but we can't do everything... at least not at the
+                                    same time. So think of your priorities not in terms of what activities you do, but
+                                    when you do them. Timing is everything.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 9 -->
+                    <ul id="portfolio-grid" class="thumbnails row">
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio01.png" alt="project 1">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio02.png" alt="project 2">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio03.png" alt="project 3">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio04.png" alt="project 4">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv3">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio05.png" alt="project 5">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv4">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio06.png" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv5">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio07.png" alt="project 7" />
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv6">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio08.png" alt="project 8">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv7">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="images/Portfolio09.png" alt="project 9">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv8">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
-            <br><br><br>
-            <div class="d-flex justify-content-around row">
-
-                <div class="card ">
-                    <div class="first-content">
-                        <img src="./images/geek start sr.jpg" class="imgs" alt="">
-                    </div>
-                    <div class="second-content">
-                        <div>
-
-                            <h5>Geek Start Sr</h5><br>
-                            <p>🚀 the GEEK Start Sr Hackathon's thrills and chills all over ! On September 23–24, our
-                                third-year coding prodigies made history. As we continue to cultivate genius minds, stay
-                                tuned for additional technological thrills. 🔥👩‍💻👨‍💻</p><br>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="card ">
-                    <div class="first-content">
-                        <img src="./images/inaug 1.jpg" class="imgs" alt="">
-                    </div>
-                    <div class="second-content">
-                        <div>
-
-                            <h5>Inagural Event</h5><br>
-                            <p>✨Experience the magic of the GFGSC-LIET's first event✨, which took place on September 1
-                                and 2, 2022! Maniteja, a successful graduate and React developer, served as our chief
-                                guest – a true honor. His experiences and thoughts were the subject of a fascinating
-                                journey during the event.</p><br>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="card n ">
-                    <div class="first-content">
-                        <img src="./images/sol for ind.jpg" class="imgs" alt="">
-                    </div>
-                    <div class="second-content">
-                        <span>Second</span>
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
         </div>
+        <!-- Portfolio section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="text-center text-lg-start text-dark" style="background-color: #fff">
+
+            <section class="d-flex justify-content-between p-4 text-white" style="background-color: #1f1f1f">
+                <div class="me-5">
+                    <span>Made with ❤️ By GFGSC-LIET</span>
+                </div>
+                <div>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+        </footer>
+
 
 
 
     </div>
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <script src="./js/core.min.js"></script>
-    <script src="./js/script.js"></script>
-
+        crossorigin="anonymous"></script> -->
+        <script src="js/jquery.bxslider.js"></script>
+        <script src="js/jquery.cslider.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.placeholder.js"></script>
+        <script src="js/events.js"></script>
 </body>
 
 </html>
