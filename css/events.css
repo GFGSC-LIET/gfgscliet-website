@@ -8572,10 +8572,10 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
     background-position: center center; }
   
-.owl-dots , .ion-ios-arrow-forward , .ion-ios-arrow-back{
+/* .owl-dots , .ion-ios-arrow-forward , .ion-ios-arrow-back{
     display: none;
     visibility: hidden;
-}
+} */
   .owl-carousel {
     position: relative; }
     .owl-carousel .owl-item {
