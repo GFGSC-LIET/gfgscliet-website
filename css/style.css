@@ -495,27 +495,3 @@ input:checked+.slider:before {
 }
 
 
-
-/* scrollup */
-
-.scrollup {
-    text-align: center;
-    cursor: pointer;
-    vertical-align: middle;
-    width: 39px;
-    height: 39px;
-    border-radius: 5px;
-    font-size: 20px;
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    border: 1px solid #fff;
-    display: none;
-    background: #FECE1A;
-}
-
-.scrollup>a {
-    position: relative;
-    top: 7px;
-    color: #fff;
-}
