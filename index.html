@@ -2,20 +2,21 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
-    <title>GFGSC-LIET</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="dr">
+<body>
+
     <div class="preloader">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
             class="loader">
@@ -27,34 +28,68 @@
 
 
     <div class="dr page">
-        <div class="container-xxl position-relative p-0" id="home">
-            <nav id="nav" class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-top shadow-sm">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"></h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars" style="color: #fff; font-size: 25px;"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto py-0">
-                        <a href="#about" class="nav-item nav-link active">Home</a>
-                        <a href="#feature" class="nav-item nav-link">Team</a>
-                        <a href="#pricing" class="nav-item nav-link">Events</a>
-                        <a href="#review" class="nav-item nav-link">Gallery</a>
-                        <a href="#contact" class="nav-item nav-link">POTW</a>
+        
+        <!-- Page Header-->
+        <header class="section page-header">
+            <!-- RD Navbar-->
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+                    data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed"
+                    data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed"
+                    data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static"
+                    data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static"
+                    data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px"
+                    data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <!-- RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!-- RD Navbar Toggle-->
+                                <button class="rd-navbar-toggle"
+                                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <!-- RD Navbar Brand-->
+                                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img
+                                            src="images/logo-default-223x50.png" alt="" width="223" height="50" /></a>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-main-element">
+                                <div class="rd-navbar-nav-wrap">
+                                    <!-- RD Navbar Share-->
+                                    <div class="rd-navbar-share fl-bigmug-line-share27"
+                                        data-rd-navbar-toggle=".rd-navbar-share-list">
+                                        <ul class="list-inline rd-navbar-share-list">
+                                            <li class="rd-navbar-share-list-item"><a class="icon fa fa-facebook"
+                                                    href="#"></a></li>
+                                            <li class="rd-navbar-share-list-item"><a class="icon fa fa-twitter"
+                                                    href="#"></a></li>
+                                            <li class="rd-navbar-share-list-item"><a class="icon fa fa-google-plus"
+                                                    href="#"></a></li>
+                                            <li class="rd-navbar-share-list-item"><a class="icon fa fa-instagram"
+                                                    href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="rd-navbar-nav">
+                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a></li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#services">Services</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#projects">Projects</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#team">Team</a></li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#news">News</a></li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#contacts">Contacts</a>
+                                        </li>
+                                    </ul>
+                                    <label class="switch">
+                                        <input class="checkbox" type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <label class="switch">
-                        <input class="checkbox" type="checkbox">
-                        <span class="slider"></span>
-                    </label>
-
-                </div>
-            </nav>
-        </div>
-
-
-        <!--Swiper-->
+                </nav>
+            </div>
+        </header>
 
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -87,7 +122,8 @@
             <div class="container  ">
                 <div class="heading_container pt-5">
                     <h2 class="drw pb-5"
-                        style="text-align: center; position: relative; top: 35px; font-size: 50px !important;">Why
+                        style="text-align: center; position: relative; top: 35px; font-size: 50px !important;">
+                        Why
                         choose GFGSC-LIET?
                     </h2>
                 </div>
@@ -145,6 +181,9 @@
                 </div>
             </div>
         </section>
+
+
+
 
         <!--faq-->
         <section>
@@ -290,15 +329,19 @@
         </footer>
 
 
-
-        
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <!-- Javascript-->
+    <script src="./js/core.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- coded by Himic-->
 </body>
 
 </html>
