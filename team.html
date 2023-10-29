@@ -1,907 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Core Team</title>
-    <link type="text/css" rel="stylesheet" href="./css/team.css">
+    <title>Team</title>
+    <link rel="stylesheet" href="css/team.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  </head>
 </head>
-
 <body>
-
-
-
-        <!-- Leads -->
-        <div class="our-team-head" data-aos="fade-down"><span>Our</span> Core Team</div>
-        <section id="team-loc" class="section-body">
-            <!-- Lead -->
-
-            <div class="team-members">
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="./Assets/siddardh.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Venkata Siddardha Rali</span>
-                            <span class="about-me">Lead</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:sidhurv8@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Co-Lead -->
-                <div class="card">
-
-
-                    <div class="profile-pic">
-
-                        <img src="./Assets/hashita.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Hashita Pusapati</span>
-                            <span class="about-me">Co-Lead</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="https://www.instagram.com/hashitapusapati/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="https://github.com/hashitapusapati">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="www.linkedin.com/in/
-                    hashita-pusapati-a36927287
-                    ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:hashitapusapati012@gmail.com@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
-                </div>
+    <!--Team Start-->
+    <team>
+    <div class="py-5 team3">
+        <div class="container">
+          <div class="row justify-content-center mb-4">
+            <div class="col-md-7 text-center">
+              <h3 class="mb-3">Our Core Team</h3>
             </div>
-        </section>
-
-
-        <!-- Members -->
-
-        <section id="team-loc" class="section-body">
-            <!-- Tech head1 -->
-            <div class="team-members">
-                <div class="card">
-                    <div class="profile-pic">
-
-                        <img src="./Assets/Gowtham.jpeg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Puvvula sai Gowtham</span>
-                            <span class="about-me">Technical Head</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="https://www.instagram.com/p.sai_gowtham/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="https://github.com/p-sai-gowtham">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/sai-gowtham-puvvula-607109214/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:puvvulasaigowtham@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
+          </div>
+          <div class="row">
+            <!-- column  -->
+            <div class="col-lg-4 mb-4">
+              <!-- Row -->
+              <div class="row">
+                <div class="col-md-12">
+                  <img src="members/siddardha.jpg" alt="wrapkit" class="img-fluid" />
                 </div>
-
-                <!-- Techlead-2 -->
-
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="./Assets/eswar.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Eswara Rao Vetla</span>
-                            <span class="about-me">Technical Head</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="https://www.instagram.com/_eswar_vetla_19/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="https://twitter.com/EswarVetla">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="https://github.com/ESWARVETLA-19">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/eswara-rao-vetla-01152a235/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:eswarvetla9119@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
+                <div class="col-md-12">
+                  <div class="pt-2">
+                    <h5 class="mt-4 font-weight-medium mb-0">Venkata Siddardha Rali</h5>
+                    <h6 class="subtitle">Chapter Lead</h6>
+                    <p>Leading the way with passion and vision, he is charting a course for success and making waves on campus.</p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/venkata-siddardha-rali-535561223/" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                      <li class="list-inline-item"><a href="https://twitter.com/siddu_dev175" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.instagram.com/i_am_sidhardha/" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="mailto:sidhurv8@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                    </ul>
+                  </div>
                 </div>
-
-
-                <!-- techlead-3 -->
-
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="./Assets/venugopal.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Neyigapula Venu Gopal</span>
-                            <span class="about-me">Technical Head</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="https://www.instagram.com/_vgopal_/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="https://twitter.com/VNeyigapula?t=BiGItv5zdvnWrm7sjL6FNA&s=09">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="https://github.com/venugopal2003">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/neyigapula-v-78536a1a4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:eswarvetla9119@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- tech associate-1 -->
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="eswar.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Eswara Rao Vetla</span>
-                            <span class="about-me">Technical Head</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:eswarvetla9119@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- tech associate-2 -->
-
-
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="./Assets/reshma.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Reshma Tejeswani Patarapalli</span>
-                            <span class="about-me">Technical Associate</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="https://github.com/reshma4167">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/reshma-tejeswani-b575741a6/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:reshmatejeswini25@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- social media -->
-
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="./Assets/srikar.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Srikar Tenneti</span>
-                            <span class="about-me">Social Media Head</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="https://www.instagram.com/tinkusrikar_7/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="https://twitter.com/tenneti_srikar">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="https://github.com/tinkten7">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/srikar-tenneti-849522235">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:eswarvetla9119@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- designing -->
-
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="./Assets/sai rohith.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Sai Rohith Sivvam</span>
-                            <span class="about-me">Designing & Branding Lead</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="https://www.instagram.com/sai_rohith_9492/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="https://github.com/RohithSais">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/sai-rohith-aa9569260/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:rohithsai6861@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- pr  -->
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="./Assets/mahalakshmi.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Kirthika Mahalaxmi Ganta</span>
-                            <span class="about-me">Public relation and outreach Head</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="https://instagram.com/mahakomaliganta296?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="https://github.com/MahaKomali">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/g-mahalaxmi-b82004250">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:mkmaha29@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- event head -->
-
-
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="./Assets/keerthi.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Bhavya Sai Keerthi Thammineni</span>
-                            <span class="about-me">Event Head</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="https://github.com/BhavyaSaiKeerthiThammineni14">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/bhavya-sai-keerthi-thammineni">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:bhavyaskthammineni@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- marketting -->
-
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="./Assets/akshaya.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">AKSHAYA SRI ARASADA</span>
-                            <span class="about-me">MARKETING Head</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a
-                                    href="https://instagram.com/palette_unleashed?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="https://github.com/Akshayasri0805">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/akshaya-sri-arasada-0a6293254">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:akshayasri0805@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- cyber -->
-
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="./Assets/sriraj.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Tata Sriraj</span>
-                            <span class="about-me"> Cyber Security Domain Head
-                            </span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:sriraj151203@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- web development -->
-
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="eswar.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Eswara Rao Vetla</span>
-                            <span class="about-me">Technical Head</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:eswarvetla9119@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <!-- Row -->
             </div>
-        </section>
-
-        <!-- former Leads -->
-        <div class="our-team-head" data-aos="fade-down"><span>Former</span> Campus Leads</div>
-        <section id="team-loc" class="section-body">
-
-            <!-- Lead -->
-            <div class="team-members">
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="eswar.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Venkata Siddardha Rali</span>
-                            <span class="about-me">Lead</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:eswarvetla9119@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
+            <!-- column  -->
+            <!-- column  -->
+            <div class="col-lg-4 mb-4">
+              <!-- Row -->
+              <div class="row">
+                <div class="col-md-12 pro-pic">
+                  <img src="members/hashita.jpg" alt="wrapkit" class="img-fluid" />
                 </div>
-
-
-                <!-- Co-Lead -->
-                <div class="card">
-
-                    <div class="profile-pic">
-
-                        <img src="eswar.jpg" alt="profile-pic" class="profile-pic-img">
-                    </div>
-                    <div class="bottom">
-                        <div class="content">
-                            <span class="name">Hashita Pusapati</span>
-                            <span class="about-me">Co-Lead</span>
-                        </div>
-                        <div class="bottom-bottom">
-                            <div class="social-links-container">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
-                                        viewBox="0 0 16 15.999">
-                                        <path id="Subtraction_4" data-name="Subtraction 4"
-                                            d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
-                                            transform="translate(6 598)"></path>
-                                    </svg>
-                                    <span class="tooltip-social">Instagram</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path
-                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Twitter</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path
-                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">Github</span>
-                                </a>
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path
-                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                        </path>
-                                    </svg>
-                                    <span class="tooltip-social">LinkedIn</span>
-                                </a>
-                            </div>
-                            <a href="mailto:eswarvetla9119@gmail.com" class="button">Contact me</a>
-                        </div>
-                    </div>
+                <div class="col-md-12">
+                  <div class="pt-2">
+                    <h5 class="mt-4 font-weight-medium mb-0">Hashita Pusapati</h5>
+                    <h6 class="subtitle">Chapter Co-Lead</h6>
+                    <p>Sailing alongside our Club Captain, she is the wind beneath our sails, steering us toward excellence. Together, we conquer the campus seas!</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/hashita-pusapati-315194226" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="https://x.com/Hashitapus5032" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://instagram.com/hashitapusapati?igshid=YTQwZjQ0NmI0OA==" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="mailto:hashitapusapati012@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
+              <!-- Row -->
             </div>
-        </section>
+            <!-- column  -->
+            <!-- column  -->
+            <div class="col-lg-4 mb-4">
+              <!-- Row -->
+              <div class="row">
+                <div class="col-md-12 pro-pic">
+                  <img src="members/eswar.jpg" alt="wrapkit" class="img-fluid" />
+                </div>
+                <div class="col-md-12">
+                  <div class="pt-2">
+                    <h5 class="mt-4 font-weight-medium mb-0">Eswara Rao Vetla</h5>
+                    <h6 class="subtitle">Technical Head</h6>
+                    <p> Leading the way in the realm of technology, he is the genius behind our club's technical brilliance. Prepare for a tech-powered revolution!</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="mailto:eswarvetla9119@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Row -->
+            </div>
+            <!-- column  -->
+          </div>
+        </div>
+      </div>
+      <!--Row 2-->
+        <div class="py-5 team3">
+            <div class="container">
+            <div class="row">
+                <!-- column  -->
+                <div class="col-lg-4 mb-4">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12 pro-pic">
+                    <img src="members/Gowtham.jpg" alt="wrapkit" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                    <div class="pt-2">
+                        <h5 class="mt-4 font-weight-medium mb-0">Sai Gowtham Puvvula</h5>
+                        <h6 class="subtitle">Technical Head</h6>
+                        <p>Guiding our tech journey with expertise and innovation, he is the driving force behind our club's technical prowess. Ready to code the future.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sai-gowtham-puvvula-607109214/" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.twitter.com/GowthamSai21782" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/p.sai_gowtham/" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:puvvulasaigowtham@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                </div>
+                <!-- column  -->
+                <!-- column  -->
+                <div class="col-lg-4 mb-4">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12 pro-pic">
+                    <img src="members/venugopal.jpg" alt="wrapkit" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                    <div class="pt-2">
+                        <h5 class="mt-4 font-weight-medium mb-0">Venu Gopal Neyigapula</h5>
+                        <h6 class="subtitle">Technical Head</h6>
+                        <p>Illuminating the path to technological excellence, he lead the charge in our club's tech endeavors. Join us as we code the future!</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/neyigapula-v-78536a1a4/" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/VNeyigapula" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/_vgopal_/" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:neyigapulavenugopal@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- 3rd person-->
+                <div class="col-lg-4 mb-4">
+                    <!-- Row -->
+                    <div class="row">
+                        <div class="col-md-12 pro-pic">
+                        <img src="members/reshma.jpg" alt="wrapkit" class="img-fluid" />
+                        </div>
+                        <div class="col-md-12">
+                        <div class="pt-2">
+                            <h5 class="mt-4 font-weight-medium mb-0">Reshma Tejeswani Patarapalli</h5>
+                            <h6 class="subtitle">Technical Associate</h6>
+                            <p>Guiding our tech endeavors with creativity and precision, she is the architect behind our club's technical prowess.</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/reshmatejeswini" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="mailto:reshmatejeswini25@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- Row -->
+                    </div>
+                <!-- column  -->
+            </div>
+            </div>
+        </div>
+        <!--Row 3-->
+        <div class="py-5 team3">
+            <div class="container">
+            <div class="row">
+                <!-- column  -->
+                <div class="col-lg-4 mb-4">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12 pro-pic">
+                    <img src="members/sudhish.jpg" alt="wrapkit" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                    <div class="pt-2">
+                        <h5 class="mt-4 font-weight-medium mb-0">Sudhish Amiti</h5>
+                        <h6 class="subtitle">Technical Associate</h6>
+                        <p>Fueling our club's technical prowess with innovation and knowledge, he is the driving engine behind our tech-powered initiatives.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sudhish-amiti/" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:sudhishamiti2003@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                </div>
+                <!-- column  -->
+                <!-- column  -->
+                <div class="col-lg-4 mb-4">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12 pro-pic">
+                    <img src="members/srikar.jpg" alt="wrapkit" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                    <div class="pt-2">
+                        <h5 class="mt-4 font-weight-medium mb-0">Srikar Tenneti</h5>
+                        <h6 class="subtitle">Social Media Head</h6>
+                        <p>Watch him work with his turning clicks into campus magic. Get ready for a virtual revolution! </p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:tennetisrikar@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                </div>
+                <!-- column  -->
+                <!-- column  -->
+                <div class="col-lg-4 mb-4">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12 pro-pic">
+                    <img src="members/keerthi.jpg" alt="wrapkit" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                    <div class="pt-2">
+                        <h5 class="mt-4 font-weight-medium mb-0">Bavya Sai Keerthi Thammineni</h5>
+                        <h6 class="subtitle">Events Head</h6>
+                        <p>Orchestrating unforgettable experiences and memorable moments, She is the creative genius behind our club's events.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:bhavyaskthammineni@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                </div>
+                <!-- column  -->
+            </div>
+            </div>
+        </div>
+        <!--Row 4-->
+        <div class="py-5 team3">
+            <div class="container">
+            <div class="row">
+                <!-- column  -->
+                <div class="col-lg-4 mb-4">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12 pro-pic">
+                    <img src="members/sai rohith.jpg" alt="wrapkit" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                    <div class="pt-2">
+                        <h5 class="mt-4 font-weight-medium mb-0">Sai Rohith</h5>
+                        <h6 class="subtitle">Design & Branding Head</h6>
+                        <p>Crafting our brand's visual identity with creativity and finesse, he is the artistic visionary behind our club's look and feel. Prepare for a visual journey!</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:rohithsai6861@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                </div>
+                <!-- column  -->
+                <!-- column  -->
+                <div class="col-lg-4 mb-4">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12 pro-pic">
+                    <img src="members/mahalakshmi.jpg" alt="wrapkit" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                    <div class="pt-2">
+                        <h5 class="mt-4 font-weight-medium mb-0">Kirthika Mahalakshmi Ganta</h5>
+                        <h6 class="subtitle">PR & Outreach Head</h6>
+                        <p>Mastering the art of public relations and outreach, she is the wizard behind our club's voice and influence.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/kirthika-mahalaxmi-ganta-b82004250/" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://x.com/Kirthikam29?t=3NLTPv5O6BAdfCAY6qatzQ&s=09" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/mahaganta" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:mkmaha29@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                </div>
+                <!-- column  -->
+                <!-- column  -->
+                <div class="col-lg-4 mb-4">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12 pro-pic">
+                    <img src="members/akshaya.jpg" alt="wrapkit" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                    <div class="pt-2">
+                        <h5 class="mt-4 font-weight-medium mb-0">Akshaya Sri Arasada</h5>
+                        <h6 class="subtitle">Marketing Head</h6>
+                        <p>A force to be reckoned with in the world of promotion and strategy, she is the driving energy behind our club's outreach and impact.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:akshayasri0805@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                </div>
+                <!-- column  -->
+            </div>
+            </div>
+        </div>
+        <!--Row 5-->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-7 text-center">
+              <h3 class="mb-3">Domain Heads</h3>
+            </div>
+          </div>
+        <div class="py-5 team3">
+            <div class="container">
+            <div class="row">
+                <!-- column  -->
+                <div class="col-lg-4 mb-4">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12 pro-pic">
+                    <img src="members/sriraj.jpg" alt="wrapkit" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                    <div class="pt-2">
+                        <h5 class="mt-4 font-weight-medium mb-0">Sriraj Tata</h5>
+                        <h6 class="subtitle">Cyber Security Domain Head</h6>
+                        <p>Leading the charge in defending our digital kingdom, he is the shield against cyber threats and vulnerabilities.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sriraj-tata-0499b7228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:sriraj151203@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                </div>
+                <!-- column  -->
+                <!-- column  -->
+                <div class="col-lg-4 mb-4">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12 pro-pic">
+                    <img src="members/sandeep.jpg" alt="wrapkit" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                    <div class="pt-2">
+                        <h5 class="mt-4 font-weight-medium mb-0">Sandeep Tottadi</h5>
+                        <h6 class="subtitle">Web Development Domain Head</h6>
+                        <p>Crafting online experiences with finesse and innovation, they're the architect behind our club's web development magic.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:sandeeptottadi@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
 
+                <!-- Row -->
+                </div>
+                <!-- column  -->
+                <!-- column  --> 
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-7 text-center">
+                      <h3 class="mb-3">Founding Leads</h3>
+                    </div>
+                  </div>
+                <div class="col-lg-4 mb-4">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12 pro-pic">
+                    <img src="members/uday bro.jpg" alt="wrapkit" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                    <div class="pt-2">
+                        <h5 class="mt-4 font-weight-medium mb-0">Uday Santhosh Kumar</h5>
+                        <h6 class="subtitle">Founding Lead 2022 Tenure</h6>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/udaysk3/" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/UdaySk333" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/uday_sk_3/" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:mailto:burluudaysantoshkumar3@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                            <li class="list-inline-item"><a href="http://github.com/udaysk3" class="text-decoration-none d-block px-1"><i class="bi bi-github"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                </div>
+                <!-- column  -->
+                <!-- column  -->
+                <div class="col-lg-4 mb-4">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12 pro-pic">
+                    <img src="members/hemanth bro.jpg" alt="wrapkit" class="img-fluid" />
+                    </div>
+                    <div class="col-md-12">
+                    <div class="pt-2">
+                        <h5 class="mt-4 font-weight-medium mb-0">Hemanth Kumar</h5>
+                        <h6 class="subtitle">Founding Co-Lead 2022 Tenure</h6>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/hemanth-kumar-hk" class="text-decoration-none d-block px-1"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/HemanthKum75332" class="text-decoration-none d-block px-1"><i class="bi bi-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/hemanth_kumar_kittu" class="text-decoration-none d-block px-1"><i class="bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:hemanthkumar8251@gmail.com" class="text-decoration-none d-block px-1"><i class="bi bi-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                </div>
+                <!-- column  -->
+                <!-- column  -->
+                <!-- End-->
+            </div>
+            </div>
+        </div>
+    </team>
+    <!--Team End-->
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </html>
