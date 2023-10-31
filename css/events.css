@@ -2832,6 +2832,10 @@ html.rd-navbar-fixed-linked .page-header {
     padding-bottom: 20px;
   }
 }
+.rd-navbar-classic.rd-navbar-static .rd-navbar-brand img {
+  width: 60px;
+  height: 60px;
+}
 
 @media (min-width: 1600px) {
   .rd-navbar-classic-project {

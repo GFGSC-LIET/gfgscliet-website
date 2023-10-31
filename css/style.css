@@ -2853,6 +2853,11 @@ html.rd-navbar-fixed-linked .page-header {
     margin-top: 20px;
 }
 
+.rd-navbar-classic.rd-navbar-static .rd-navbar-brand img{
+    width: 60px;
+    height: 60px;
+}
+
 
 /* toggle button */
 

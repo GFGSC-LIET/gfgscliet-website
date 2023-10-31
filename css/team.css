@@ -248,6 +248,11 @@ a[href*='mailto'] {
     transition: all .3s ease;
 }
 
+.rd-navbar-classic.rd-navbar-static .rd-navbar-brand img {
+    width: 60px;
+    height: 60px;
+}
+
 .link-classic span::before,
 .link-classic span::after {
     display: inline-block;
