@@ -3007,3 +3007,6 @@ p {
         stroke-dashoffset: 5;
     }
 }
+.rd-navbar-main {
+    height: 90px;
+}
