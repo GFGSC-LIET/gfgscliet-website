@@ -11298,3 +11298,117 @@ p {
         display: inline-block;
         margin-bottom: 5px; }
   
+
+        .eventsPage{
+          color: white;
+          text-align: center;
+          margin-left: 10%;
+          margin-top: 100px;
+          margin-right: 10%;
+          font-family: "Poppins", sans-serif;
+      }
+      .eventsPage h1{
+          font-size: 65px;
+          font-weight: 600;
+      }
+      .eventsPage p{
+          
+          font-size: 20px;
+      }
+      .eventsContainer{
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 50px;
+          margin-top: 50px;
+          text-align: left;
+      }
+      .eventsContainer-reverse{
+          display: flex;
+          flex-direction: row-reverse;
+          margin-bottom: 100px;
+          text-align: right;
+          margin-top: 100px;
+      }
+      .eventsContainer img, .eventsContainer-reverse img{
+          height: 300px;
+      }
+      .eventsContainer .eventsDetails{
+          margin-left: 100px;
+      }
+      .eventsContainer-reverse .eventsDetails{
+          margin-right: 100px;
+      }
+      .eventsDetails h3{
+          color: #43a047;
+      }
+      .eventsDetailsButtons button{
+          background-color: #43a047;
+          color: white;
+          border-radius: 300px;
+          padding: 10px 14px;
+          border: 2px solid #43a047;
+          transition: 0.4s all ease;
+      
+      }
+      .eventsDetailsButtons button:hover{
+          background-color: #43a04800;
+          border: 2px solid #43a047;
+          color: white;
+          border-radius: 300px;
+          padding: 10px 14px;
+      }
+      @media screen and (max-width: 1440px){
+          .eventsContainer img, .eventsContainer-reverse img{
+              height: 250px;
+          }
+          .eventsContainer .eventsDetails{
+              margin-left: 50px;
+          }
+          .eventsContainer-reverse .eventsDetails{
+              margin-right: 50px;
+          }
+          .eventsPage{
+              margin-left: 5%;
+              margin-right: 5%;
+          }
+      }
+      @media screen and (max-width: 1000px){
+          .eventsContainer img, .eventsContainer-reverse img{
+              height: 130%;
+              margin-bottom: 30px;
+          }
+          .eventsContainer .eventsDetails{
+              text-align: center;
+              flex-direction: column;
+          }
+          .eventsContainer-reverse .eventsDetails{
+              text-align: center;
+              flex-direction: column-reverse;
+          }
+          .eventsContainer{
+              text-align: center;
+              flex-direction: column;
+          }
+          .eventsContainer-reverse{
+              text-align: center;
+              flex-direction: column;
+          }
+          .eventsContainer .eventsDetails{
+              margin-left: 0px;
+          }
+          .eventsContainer-reverse .eventsDetails{
+              margin-right: 0px;
+          }
+          .eventsPage h1{
+              font-size: 45px;
+              font-weight: 600;
+          }
+          .eventsPage p{
+              
+              font-size: 14px;
+          }
+      }
+      
+      *{
+          color:black;
+      }
