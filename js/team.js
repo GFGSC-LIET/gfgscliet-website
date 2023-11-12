@@ -131,7 +131,7 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
 				} else if (plugins.rdNavbar.attr('data' + aliaces[i] + 'stick-up')) {
 					responsiveNavbar[values[i]]['stickUp'] = plugins.rdNavbar.attr('data' + aliaces[i] + 'stick-up') === 'true';
 				}
-
+z
 				if (plugins.rdNavbar.attr('data' + aliaces[i] + 'stick-up-offset')) {
 					responsiveNavbar[values[i]]['stickUpOffset'] = plugins.rdNavbar.attr('data' + aliaces[i] + 'stick-up-offset');
 				}
