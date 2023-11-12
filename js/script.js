@@ -44,9 +44,25 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
 
 
 
+const sidebar = document.getElementById("sidebar");
+const sidebarOverlay = document.getElementById("sidebar-overlay");
 
+sidebarOverlay.addEventListener("click", () => {
+	sidebar.classList.remove("sidebar-open");
+	sidebarOverlay.classList.remove("sidebar-overlay-open");
+})
 
+const menubar = document.getElementById("menubar");
 
+menubar.addEventListener("click", () => {
+	if(sidebar.classList.contains("sidebar-open")) {
+		sidebar.classList.remove("sidebar-open");
+		sidebarOverlay.classList.remove("sidebar-overlay-open");
+	} else {
+		sidebar.classList.add("sidebar-open");
+		sidebarOverlay.classList.add("sidebar-overlay-open");
+	}
+})
 
 
 
