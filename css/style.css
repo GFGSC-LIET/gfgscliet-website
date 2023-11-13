@@ -309,9 +309,14 @@ footer section {
     footer section {
         flex-direction: column !important;
         justify-content: flex-start;
+        align-items: center;
     }
     .footer-socials {
         margin-top: 10px;
+        width: 50%;
+        display: flex;
+        margin-right: 0px !important;
+        justify-content: space-between;
     }
 }
 
