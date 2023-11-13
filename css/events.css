@@ -23,6 +23,28 @@ body {
   height: 90px;
 }
 
+/* Footer */
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+footer section span {
+  color:  white !important;
+}
+
+@media (max-width: 500px) {
+  footer section {
+      flex-direction: column !important;
+      justify-content: flex-start;
+  }
+  .footer-socials {
+      margin-top: 10px;
+  }
+}
+
 
 /*
 *
@@ -12497,7 +12519,11 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #b063c5;
+  color: #2f8d46;
+}
+
+a:hover {
+  color: #2f8d46;
 }
 
 a:hover,

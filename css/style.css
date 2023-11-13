@@ -9,15 +9,6 @@ body {
     background: #fff !important;
 }
 
-.fs {
-    font-size: 25px !important;
-}
-
-@media(max-width:438px) {
-    .fs {
-        font-size: 20px !important;
-    }
-}
 
 /* Navbar123 */
 
@@ -25,7 +16,7 @@ body {
     position: fixed;
     width: 100%;
     height: 90px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.93);
     z-index: 99;
 }
 
@@ -101,13 +92,14 @@ body {
     flex-direction: row;
     padding: 0 15px;
     z-index: 1000;
+    align-items: center;
 }
 
 /* sidebar */
 
 .sidebar {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.93);
     width: 0%;
     z-index: 100;
     position: fixed;
@@ -259,6 +251,67 @@ body {
     }
     .menubar, .bar {
         display: flex;
+    }
+    .content-title {
+        font-size: 25px !important;
+    }
+    .fs {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-container-1 {
+        flex-direction: column-reverse !important;
+    }
+    .fs {
+        text-align: center !important;
+    }
+    .container img {
+        width: 50% !important;
+    }
+    .heading_container {
+        padding: 0px !important;
+    }
+}
+
+/* content */
+
+
+.content-title {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.fs {
+    font-size: 20px;
+    width: 100% !important;
+}
+
+.drw {
+    font-weight: 900;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media (max-width: 500px) {
+    footer section {
+        flex-direction: column !important;
+        justify-content: flex-start;
+    }
+    .footer-socials {
+        margin-top: 10px;
     }
 }
 
@@ -526,11 +579,11 @@ a[href*='mailto'] {
     }
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .container+.link-classic {
         margin-top: 56px;
     }
-}
+} */
 
 .gallery-title,
 .link-instafeed-3 {
@@ -757,14 +810,6 @@ a[href*='mailto'] {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.about_section .img-box {
-    position: relative;
-}
-
-.about_section .img-box img {
-    width: 100%;
 }
 
 .about_section .detail-box p {
