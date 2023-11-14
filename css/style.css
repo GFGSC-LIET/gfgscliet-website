@@ -927,4 +927,9 @@ a[href*='mailto'] {
     .accordion-item-header {
         font-size: 14px !important;
     }
+    .hero-section {
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
 }
