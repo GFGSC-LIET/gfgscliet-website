@@ -12819,7 +12819,7 @@ h5,
 .eventsDetailsButtons button:hover {
   background-color: #43a04800;
   border: 2px solid #43a047;
-  color: white;
+  color: black;
   border-radius: 300px;
   padding: 10px 14px;
 }
