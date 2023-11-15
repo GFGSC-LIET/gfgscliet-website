@@ -723,38 +723,6 @@ input:checked+.slider:before {
 }
 
 
-/* dark mode */
-
-.drw {
-  color: #2f8d46;
-  font-size: large;
-}
-
-.drp {
-  color: #000;
-
-}
-
-p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.dark {
-  background: #1f1f1f !important;
-}
-
-.darkw {
-  color: #2f8d46;
-
-}
-
-.darkp {
-  color: #fff;
-}
-
-
-
 
 /* pre-loader */
 
